@@ -27,7 +27,7 @@ yarn install
 ```
 yarn dev
 ```
-4) Access application at http://localhost:3000
+4) Access application at http://localhost:3001
 
 ## Test
 ```
