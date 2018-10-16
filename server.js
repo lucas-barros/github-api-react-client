@@ -20,9 +20,16 @@ const rewriteFn = function (path, req) {
   return rewritePath;
 };
 
+//Add auth parameters
 const onProxyReq =  function (proxyReq, req, res) {
-  proxyReq.setHeader('client_id', process.env.GITHUB_API_CLIENT_ID);
-  proxyReq.setHeader('client_secret', process.env.GITHUB_API_CLIENT_SECRET);
+  if(proxyReq.path.indexOf("?") == -1) {
+    proxyReq.path += `?client_id=${process.env.GITHUB_API_CLIENT_ID}`;
+  }
+  else {
+    proxyReq.path += `&client_id=${process.env.GITHUB_API_CLIENT_ID}`;
+  }
+
+  proxyReq.path += `&client_secret=${process.env.GITHUB_API_CLIENT_SECRET}`;
 };
 
 const apiProxy = proxy(filter, {
