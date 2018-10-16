@@ -12,9 +12,11 @@ export default (props) => (
           </Menu.Item>
         </Link>
         <Menu.Menu position='right'>
-          <Menu.Item>
-            <Icon name='github' size='big'/>
-          </Menu.Item>
+          <a href="https://github.com/lucas-barros/github-api-react-client">
+            <Menu.Item>
+              <Icon name='github' size='big'/>
+            </Menu.Item>
+          </a>
         </Menu.Menu>
       </Grid.Row>
     </Grid>
