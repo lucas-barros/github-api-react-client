@@ -4,7 +4,7 @@
   "description": "Github api client with react and next.js",
   "license": "MIT",
   "scripts": {
-    "dev": "node server.js",
+    "dev": "PORT=3001 node server.js",
     "build": "next build",
     "start": "NODE_ENV=production node server.js -p $PORT",
     "test": "jest",
