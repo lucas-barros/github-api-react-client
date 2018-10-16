@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { Menu, Grid, Icon } from 'semantic-ui-react'
 import Link from 'next/link'
 
-const Header = (props) => (
+export default (props) => (
   <Menu fixed='top'>
     <Grid container>
       <Grid.Row>
@@ -20,5 +20,3 @@ const Header = (props) => (
     </Grid>
   </Menu>
 )
-
-export default Header

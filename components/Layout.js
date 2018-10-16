@@ -6,7 +6,7 @@ import '../styles/Layout.scss'
 
 import 'semantic-ui-css/semantic.min.css';
 
-const Layout = (props) => (
+export default (props) => (
   <div>
     <Head/>
     <Header/>
@@ -16,5 +16,3 @@ const Layout = (props) => (
      <Footer/>
   </div>
 )
-
-export default Layout
