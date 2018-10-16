@@ -36,7 +36,7 @@ app.prepare()
 .then(() => {
   const server = express()
 
-  //Proxy all request to github's api
+  //Proxy /api/users request to github's users api
   server.use(apiProxy);
 
   server.get('/user/:login', (req, res) => {
