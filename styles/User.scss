@@ -1,0 +1,11 @@
+.ui.card {
+  @media only screen and (max-width: 767px) {
+    &:last-child {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.ui.table tr td:nth-child(3){
+  word-break: break-all;
+}
