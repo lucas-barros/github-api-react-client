@@ -39,5 +39,5 @@ yarn test
 Please read [contributing.md][contributing] for details on how to contribute with this repository
 
 
-[heroku link]: https://.herokuapp.com/
+[heroku link]: https://github-api-react-client.herokuapp.com/
 [contributing]: https://github.com/lucas-barros/github-api-react-client/blob/master/contributing.md
