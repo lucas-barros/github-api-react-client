@@ -19,7 +19,8 @@
     "dev": "node server.js",
     "build": "next build",
     "start": "NODE_ENV=production node server.js -p $PORT",
-    "test": "jest"
+    "test": "jest",
+    "heroku-postbuild": "yarn build"
   },
   "devDependencies": {
     "@zeit/next-css": "^1.0.1",
