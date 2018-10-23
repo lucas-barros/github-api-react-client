@@ -3,7 +3,7 @@ import Layout from '../components/Layout.js'
 import User from '../components/User.js'
 import { requestUser, requestRepos } from '../lib/github-api.js'
 
-class UserPage extends React.Component {
+export default class extends React.Component {
   static async getInitialProps(context) {
     const { login } = context.query
     const userRes = await requestUser(login)
@@ -23,5 +23,3 @@ class UserPage extends React.Component {
     )
   }
 }
-
-export default UserPage
