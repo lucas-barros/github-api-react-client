@@ -58,9 +58,6 @@ export default class UserList extends Component {
     return (
       <Grid container>
         <Grid.Row>
-          {userList}
-        </Grid.Row>
-        <Grid.Row>
           <Grid.Column width={8}>
             <Button icon labelPosition='left' onClick={this.prevPage} disabled={this.state.pageNumber == 0}>
               <Icon name='left arrow' />
@@ -73,6 +70,9 @@ export default class UserList extends Component {
               <Icon name='right arrow' />
             </Button>
           </Grid.Column>
+        </Grid.Row>
+        <Grid.Row>
+          {userList}
         </Grid.Row>
       </Grid>
     )
